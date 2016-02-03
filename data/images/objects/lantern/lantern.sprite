@@ -1,0 +1,14 @@
+(tuxjunior-sprite
+      (action
+        (name "normal")
+        (hitbox 16 8 34 41)
+        (images
+           "lantern-1.png"
+        )
+      )
+      (action
+        (name "off")
+        (hitbox 16 8 34 41)
+        (images "lantern-off.png")
+      )
+)

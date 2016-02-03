@@ -1,0 +1,40 @@
+(tuxjunior-sprite
+  (action
+    (name "closed")
+    (hitbox 0 0 0 0)
+    (images 
+      "hatch-1.png"
+    )
+  )
+  (action
+    (name "opening")
+    (hitbox 0 0 0 0)
+    (images 
+      "hatch-1.png"
+      "hatch-2.png"
+      "hatch-3.png"
+      "hatch-4.png"
+      "hatch-5.png"
+      "hatch-6.png"
+    )
+  )
+  (action
+    (name "open")
+    (hitbox 0 0 0 0)
+    (images 
+      "hatch-6.png"
+    )
+  )
+  (action
+    (name "closing")
+    (hitbox 0 0 0 0)
+    (images 
+      "hatch-6.png"
+      "hatch-5.png"
+      "hatch-4.png"
+      "hatch-3.png"
+      "hatch-2.png"
+      "hatch-1.png"
+    )
+  )
+)

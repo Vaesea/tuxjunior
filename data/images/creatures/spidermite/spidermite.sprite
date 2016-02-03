@@ -1,0 +1,23 @@
+(tuxjunior-sprite
+	(action
+	  (name "left")
+	  (hitbox 17 194 26.8 25.8)
+(fps 2)
+	  (images "spidermite.png"
+"spidermite0.png"
+		  ))
+	(action
+	  (name "right")
+	  (hitbox 17 194 26.8 25.8)
+(fps 2)
+           (images "spidermite_flip.png")
+	  )
+
+	(action
+	  (name "squished-left")
+	  (hitbox 4 -12 31.8 31.8)
+	  (images "spidermite-squish.png"))
+	(action
+	  (name "squished-right")
+	  (hitbox 4 -12 31.8 31.8)
+	  (mirror-action "squished-left")))

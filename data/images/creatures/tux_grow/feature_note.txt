@@ -1,0 +1,7 @@
+Feature Fix Note to devs:
+
+This image animation does not currently use a sprite file. The images are hard coded in resources.cpp with the image animation speed set in main.cpp. Fix me to a sprite file if you can.
+
+tnx
+
+

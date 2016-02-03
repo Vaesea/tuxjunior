@@ -1,0 +1,6 @@
+(tuxjunior-world
+  (title "Forest World")
+  (description "World 2")
+  (hide-from-contribs #f)
+  (levelset #f)
+)

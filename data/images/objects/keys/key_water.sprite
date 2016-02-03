@@ -1,0 +1,14 @@
+(tuxjunior-sprite
+ (action
+  (name "default")
+  (images "water.png")
+ )
+ (action
+  (name "display")
+  (images "water_display.png")
+ )
+ (action
+  (name "outline")
+  (images "k_outline.png")
+ )               
+)

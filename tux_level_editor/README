@@ -1,0 +1,42 @@
+This is an unstable release of the TuxJunior Milestone 2 editor, it is a copy of the Supertux Milestone 2 editor.
+Do not expect everything to work smoothly and save often...
+
+All Credit for this work goes out to the Supertux Dev Team. Thanks!
+SEE: http://supertux.lethargik.org/index.html
+
+== Prerequisites ==
+
+ * TuxJunior 
+ * OpenGL driver and environment
+ * mono 1.2.2.1 or newer
+   (1.1.13 or newer may work but if it doesn't, don't blame us just
+    upgrade to 1.2.2.1 or newer)
+ * gtk-sharp 2.8 or newer
+
+
+== Building ==
+
+Type
+	make
+
+
+== Running ==
+
+You can start the editor by typing
+	mono tuxjunior-editor.exe
+
+If you receive errors when starting, try this flag:
+mono --runtime=v4.0 tuxjunior-editor.exe
+
+
+To run with debugging info (that is the only way to get a usable
+backtrace for a bug report in case of a crash):
+	mono --debug tuxjunior-editor.exe
+
+Remember to set your TuxJunior paths in the editor options!
+
+
+== Known Problems ==
+
+The open source ATI drivers seem to have problems with multiple viewports
+and shared textures.

@@ -1,0 +1,6 @@
+(tuxjunior-sprite
+  (action
+    (name "normal")
+    (images "../skulls/skull.png")
+  )
+) 

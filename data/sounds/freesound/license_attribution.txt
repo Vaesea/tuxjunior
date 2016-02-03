@@ -1,0 +1,84 @@
+TuxJunior 
+Attributions and License Information
+======================================================================
+File Location:
+[Tux Junior]\data\sounds\freesound\
+======================================================================
+
+
+File Name: "Chip021.wav"
+Url: data\sounds\freesound
+Date of upload: 2007-03-07 19:45:36 	
+Designer / Creator / Uploader:"HardPCM"
+Url: http://www.freesound.org/usersViewSingle.php?id=205819	
+Description:By "HardPCM" : This is an bip from an direct sound chip channel recording of an old NES game console.
+Tags:2a03 2a03-cpu 6502 6502-cpu 8bit-cpu analog arcade arcades beep bip chip chiptune circuit circuits cpu cpu-chip digital duty-cycle electro electronic game game-console hardpcm hi-fi high high-bip high-fi impulsions nes square square-channel video-game 
+
+License: 
+	Creative Commons Sampling Plus 1.0 License
+	http://creativecommons.org/licenses/sampling+/1.0/
+
+======================================================================
+Designer / Creator / Uploader: "HardPCM"
+
+File Name: "Chip023.wav"
+Url: http://www.freesound.org/samplesViewSingle.php?id=31860
+Date of upload: 2007-03-07 19:46:07
+Url: http://www.freesound.org/usersViewSingle.php?id=205819	
+Description: By "HardPCM" : This is an direct sound chip channel recording of an old NES game console.
+Tags: 2a03 2a03-cpu 6502 6502-cpu 8bit-cpu analog arcade arcades chip chiptune circuit circuits cpu cpu-chip digital duty-cycle electro electronic game game-console hardpcm hi-fi high high-fi impulsions nes square square-channel video-game 
+
+License: 
+	Creative Commons Sampling Plus 1.0 License
+	http://creativecommons.org/licenses/sampling+/1.0/
+======================================================================
+Designer / Creator / Uploader: "flatfly"
+
+File Name: "s2.wav"
+http://www.freesound.org/usersViewSingle.php?id=999
+File added by flatfly on Apr 18, 2005
+Type  	wav, 44100Hz, 1411kbps, 16 bit, Stereo
+
+License: 
+	Creative Commons Sampling Plus 1.0 License
+	http://creativecommons.org/licenses/sampling+/1.0/
+======================================================================
+Designer / Creator / Uploader: junggle
+
+btn103.wav
+http://www.freesound.org/samplesViewSingle.php?id=28913
+File added by junggle on Jan 16, 2007
+sample pack 	This sample is part of a sample pack: ambient buttons
+Description by junggle 	Short spring button sound. Recorded, mixed and mastered in cAve studio, Plzen, 2002 
+
+License: 
+	Creative Commons Sampling Plus 1.0 License
+	http://creativecommons.org/licenses/sampling+/1.0/
+
+======================================================================
+Designer / Creator / Uploader: martian
+
+slurp.aiff
+19277_martian_super_cold_slurp.wav
+
+http://www.freesound.org/samplesViewSingle.php?id=19277
+File added by martian on May 28, 2006
+Description by martian cartoon slurp
+
+License: 
+	Creative Commons Sampling Plus 1.0 License
+	http://creativecommons.org/licenses/sampling+/1.0/
+
+======================================================================
+Designer / Creator / Uploader: NoiseCollector
+
+Sample :: pigtoy.wav
+JUMP_7737_NoiseCollector_pigtoy.wav
+http://www.freesound.org/samplesViewSingle.php?id=7737
+File added by NoiseCollector on Sep 16, 2005
+Description by NoiseCollector Half pig half spring toy recorded with a cheap Radio Shack clipon condenser mic.
+
+License: 
+	Creative Commons Sampling Plus 1.0 License
+	http://creativecommons.org/licenses/sampling+/1.0/
+

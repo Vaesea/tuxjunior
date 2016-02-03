@@ -1,0 +1,7 @@
+(tuxjunior-sprite
+    (action
+      (name "default")
+      (images "spotlight_center.png")
+      (hitbox 32 32 0 0)
+    )
+)

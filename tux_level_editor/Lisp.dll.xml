@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Lisp</name>
+    </assembly>
+    <members>
+        <member name="T:Lisp.Lexer">
+            <summary>
+            Lisp lexer
+            </summary>
+            <seealso cref="T:Lisp.Parser" />
+        </member>
+        <member name="T:Lisp.Parser">
+            <summary>
+            Lisp parser
+            </summary>
+            <seealso cref="T:Lisp.Lexer" />
+        </member>
+        <member name="M:Lisp.Properties.Exists(System.String)">
+            <summary>Checks if element exists</summary>
+            <param name="Name">Name of element to find.</param>
+            <returns>False if element doesn't exist, otherwise true.</returns>
+        </member>
+        <member name="M:Lisp.Properties.Get(System.String,System.Enum@,System.Type)">
+            <summary>
+            Gets a string from somewhere unknown
+            (due to bad documentation in the rest of this class) into an Enum.
+            </summary>
+            <param name="Name">Name of attribute to find.</param>
+            <param name="Val">The <see cref="T:System.Enum" /> is returned in this.</param>
+            <param name="proptype">A <see cref="T:System.Type" /> of the Enum we want.</param>
+            <returns>False if we failed to get the value Name, otherwise true.</returns>
+        </member>
+        <member name="M:Lisp.Writer.WriteComment(System.String)">
+            <summary>
+            Writes a comment to the stream.
+            </summary>
+            <param name="comment">Contents of the comment</param>
+        </member>
+        <member name="M:Lisp.Writer.StartList(System.String)">
+            <summary>
+            Starts a new lisp tree.
+            </summary>
+            <param name="name">The name of the lisp tree.</param>
+            <seealso cref="M:Lisp.Writer.EndList(System.String)" />
+        </member>
+        <member name="M:Lisp.Writer.EndList(System.String)">
+            <summary>
+            Ends a lisptree opened with <see cref="M:Lisp.Writer.StartList(System.String)" />.
+            </summary>
+            <param name="name">The name of the lisp tree.</param>
+            <seealso cref="M:Lisp.Writer.StartList(System.String)" />
+        </member>
+        <member name="M:Lisp.Writer.Write(System.String,System.Object)">
+            <summary>
+            Write an object <paramref name="value" /> to
+            the stream under the name
+            <paramref name="name" />.
+            </summary>
+            <param name="name">The name to write value to in lisp.</param>
+            <param name="value">The object to write</param>
+            <remarks>
+            		This function can write
+            		strings, lists that implements <see cref="T:System.Collections.IEnumerable" />,
+            		and for anything else it will call <see cref="M:Lisp.Writer.WriteValue(System.Object)" />.
+            	</remarks>
+        </member>
+        <member name="M:Lisp.Writer.WriteTranslatable(System.String,System.String)">
+            <summary>
+            Writes a string and marks it as translatable
+            (for use with gettext?).
+            </summary>
+            <param name="Name">The name of the element to write.</param>
+            <param name="value">The value of it.</param>
+        </member>
+        <member name="M:Lisp.Writer.WriteValue(System.Object)">
+            <summary>
+            Processes and writes a value <paramref name="val" />.
+            </summary>
+            <remarks>
+            		If <paramref name="val" /> is a
+            		<list type="table"><listheader><term>Type</term><description>What will be written</description></listheader><item><term><see cref="T:System.Boolean" /></term><description>#t or #f will be written.</description></item><item><term><see cref="T:System.Single" /> or <see cref="T:System.Double" /></term><description>
+            					The floating point number will be formated with
+            					<see cref="P:System.Globalization.CultureInfo.InvariantCulture" /></description></item><item><term>Other</term><description>Call ToString() of <paramref name="val" /></description></item></list></remarks>
+            <param name="val">The value to write</param>
+        </member>
+        <member name="M:Lisp.Writer.WriteVerbatimLine(System.String)">
+            <summary>
+            Indents and write the string passed in <paramref name="line" />
+            without any processing of it.
+            </summary>
+            <param name="line">The line to write.</param>
+        </member>
+        <member name="M:Lisp.Writer.indent">
+            <summary>
+            Add spaces to indent to <see cref="F:Lisp.Writer.IndentDepth" />.
+            </summary>
+        </member>
+    </members>
+</doc>

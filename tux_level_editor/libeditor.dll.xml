@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>libeditor</name>
+    </assembly>
+    <members>
+        <member name="T:DataStructures.Field`1">
+            <summary>This class represents a dynamic 2-dimensional array</summary>
+        </member>
+        <member name="M:DataStructures.Field`1.#ctor(DataStructures.Field{`0},System.Int32,System.Int32,System.UInt32,System.UInt32)">
+            <summary>
+            Clone Subset of other field
+            </summary>
+        </member>
+        <member name="P:DataStructures.Field`1.Width">
+            <summary>
+            Width of array
+            </summary>
+        </member>
+        <member name="P:DataStructures.Field`1.Height">
+            <summary>
+            Height of array
+            </summary>
+        </member>
+        <member name="M:DataStructures.Vector.op_Multiply(DataStructures.Vector,DataStructures.Vector)">
+            <summary>scalar product</summary>
+        </member>
+        <member name="T:SceneGraph.ColorNode">
+            <summary>
+            	Scene graph node that changes the drawing color. Note that you can make
+            	stuff (half-)transparent by changing the alpha value of the drawing
+            	color.
+            </summary>
+            <remarks>
+            	If <see cref="F:SceneGraph.ColorNode.CanSkip" /> is set and the alpha value is 0 then this scene graph node will not call
+            	Draw of the child at all.
+            </remarks>
+        </member>
+        <member name="M:SceneGraph.ColorNode.#ctor(SceneGraph.Node,Drawing.Color)">
+            <summary>
+            	Create a new <see cref="T:SceneGraph.ColorNode" />.
+            </summary>
+            <param name="Child">The child scene graph <see cref="T:SceneGraph.Node" />.</param>
+            <param name="Color">The color to use.</param>
+        </member>
+        <member name="M:SceneGraph.ColorNode.#ctor(SceneGraph.Node,Drawing.Color,System.Boolean)">
+            <summary>
+            	Create a new <see cref="T:SceneGraph.ColorNode" />.
+            </summary>
+            <param name="Child">The child scene graph <see cref="T:SceneGraph.Node" />.</param>
+            <param name="Color">The color to use.</param>
+            <param name="CanSkip">If true we can skip drawing when <see cref="F:Drawing.Color.Alpha" /> is 0.</param>
+        </member>
+        <member name="T:SceneGraph.Layer">
+            <summary>
+            A scene graph node which organizes it's childs in layers
+            You can put a child in a layer. The layers are drawn in ascending order
+            ("You can place stuff in foreground and background layers")
+            </summary>
+        </member>
+        <member name="T:SceneGraph.Node">
+            <summary>
+            		This is the basic object of a scene graph: A single node with a Draw()
+            		command. The nodes form a graph (in our case it's a tree). Each node
+            		will trigger Draw() commands on it subnodes.
+            </summary>
+            <remarks>
+            Some introduction to scenegraphs can be found in our wiki:
+            http://tuxjunior.lethargik.org/wiki/SceneGraph
+            </remarks>
+        </member>
+        <member name="M:SceneGraph.Node.Draw(Gdk.Rectangle)">
+            <summary>
+            		When called should draw the node
+            </summary>
+            <param name="cliprect">
+            		The area that is visible in the <see cref="T:RenderView" />
+            		we are drawing to. Check with this to see if you can skip
+            		drawing.
+            </param>
+        </member>
+        <member name="T:SceneGraph.NodeWithChilds">
+            <summary>
+            A base class that allows constructing scene graph nodes that have
+            several childs
+            </summary>
+        </member>
+        <member name="T:SceneGraph.Rectangle">
+            <summary>
+            Scene Graph nodes which draws a 2 dimensional rectangle (without
+            textures, just plain color, filled or not filled)
+            </summary>
+        </member>
+        <member name="T:SceneGraph.Transform">
+            <summary>
+            A scene graph node which applies a transform to the current opengl
+            transform (the matrix will be multiplied with the currently active
+            tranform)
+            </summary>
+        </member>
+        <member name="F:Drawing.Color.Red">
+            <summary>red part of the color</summary>
+        </member>
+        <member name="F:Drawing.Color.Green">
+            <summary>green part of the color</summary>
+        </member>
+        <member name="F:Drawing.Color.Blue">
+            <summary>blue part of the color</summary>
+        </member>
+        <member name="F:Drawing.Color.Alpha">
+            <summary>alpha part of the color</summary>
+            <remarks>1.0 = full opaque, 0.0 = invisible</remarks>
+        </member>
+        <member name="F:Drawing.GlUtil.ContextValid">
+            <summary>set to false if there's no valid opengl context active</summary>
+        </member>
+        <member name="T:Drawing.Surface">
+            <summary>
+            Surface class. This class basically holds a reference to an opengl texture
+            along with texture coordinates that specify a rectangle on that texture.
+            Several surface may share a single texture (but can still have different
+            texture coordinates)
+            </summary>
+        </member>
+        <member name="M:Drawing.Surface.#ctor(System.String)">
+            <summary>Construct a new Surface from the given image resource</summary>
+        </member>
+        <member name="P:Drawing.Surface.Width">
+            <summary>get surface width in pixels</summary>
+        </member>
+        <member name="P:Drawing.Surface.Height">
+            <summary>get surface height in pixels</summary>
+        </member>
+        <member name="P:Drawing.Surface.Texture">
+            <summary>Get OpenGL Texture</summary>
+        </member>
+        <member name="M:ErrorDialog.ShowError(System.String)">
+            <summary>
+            Show error dialog for non-exceptions.
+            </summary>
+            <param name="message">Error message to show</param>
+        </member>
+        <member name="M:ErrorDialog.ShowError(System.String,System.String)">
+            <summary>
+            Show error dialog for non-exceptions.
+            </summary>
+            <param name="message">Error message to show</param>
+            <param name="details">Message to put under "details".</param>
+        </member>
+        <member name="M:IEditor.Draw(Gdk.Rectangle)">
+            <summary>
+            Draw it
+            </summary>
+            <param name="cliprect">
+            The area that is visible in the <see cref="T:RenderView" />
+            we are drawing to. Check with this to see if you can skip
+            drawing.
+            </param>
+        </member>
+        <member name="T:LogLevel">
+            <summary>
+            Loglevels for logging.
+            </summary>
+            <seealso cref="T:LogManager" />
+        </member>
+        <member name="F:LogLevel.Debug">
+            <summary>
+            Debug messages for developers.
+            </summary>
+        </member>
+        <member name="F:LogLevel.DebugWarning">
+            <summary>
+            Warnings/Errors for developers, they should fix the issue.
+            These <strong>should</strong> never show up in a release.
+            </summary>
+        </member>
+        <member name="F:LogLevel.Fatal">
+            <summary>
+            The world will end (or at least this part of it), maybe with
+            emergency save of level, maybe not.
+            </summary>
+        </member>
+        <member name="M:LogManager.GetLevelString(LogLevel)">
+            <summary>
+            Returns string to use as prefix for <paramref name="loglevel" /></summary>
+            <param name="loglevel">The loglevel</param>
+            <returns>The prefix to use in the format of "XXX: ".</returns>
+        </member>
+        <member name="M:LogManager.Log(LogLevel,System.String)">
+            <summary>
+            Log a message with <paramref name="loglevel" /></summary>
+            <remarks>
+            Currently this logs to STDERR for <see cref="F:LogLevel.Error" /> and
+            <see cref="F:LogLevel.Fatal" /> and other levels to STDOUT.
+            </remarks>
+            <param name="loglevel">The log level of this message.</param>
+            <param name="message">The message to log</param>
+        </member>
+        <member name="M:LogManager.Log(LogLevel,System.String,System.Object)">
+            <summary>
+            Log a message with <paramref name="loglevel" /></summary>
+            <remarks>
+            Currently this logs to STDERR for <see cref="F:LogLevel.Error" /> and
+            <see cref="F:LogLevel.Fatal" /> and other levels to STDOUT.
+            </remarks>
+            <param name="loglevel">The log level of this message.</param>
+            <param name="format">A format string.</param>
+            <param name="arg0">First object for format string</param>
+        </member>
+        <member name="M:LogManager.Log(LogLevel,System.String,System.Object,System.Object)">
+            <summary>
+            Log a message with <paramref name="loglevel" /></summary>
+            <remarks>
+            Currently this logs to STDERR for <see cref="F:LogLevel.Error" /> and
+            <see cref="F:LogLevel.Fatal" /> and other levels to STDOUT.
+            </remarks>
+            <param name="loglevel">The log level of this message.</param>
+            <param name="format">A format string.</param>
+            <param name="arg0">First object for format string</param>
+            <param name="arg1">Second object for format string</param>
+        </member>
+        <member name="M:LogManager.Log(LogLevel,System.String,System.Object[])">
+            <summary>
+            Log a message with <paramref name="loglevel" /></summary>
+            <remarks>
+            Currently this logs to STDERR for <see cref="F:LogLevel.Error" /> and
+            <see cref="F:LogLevel.Fatal" /> and other levels to STDOUT.
+            </remarks>
+            <param name="loglevel">The log level of this message.</param>
+            <param name="format">A format string.</param>
+            <param name="args">Array of object for format string</param>
+        </member>
+        <member name="M:RenderView.GetClipRect">
+            <summary>
+            		Returns a <see cref="T:Gdk.Rectangle" /> for the currently
+            		visible area in world coordinates.
+            </summary>
+            <returns>A <see cref="T:Gdk.Rectangle" />.</returns>
+        </member>
+        <member name="M:RenderView.SetAdjustments(Gtk.Adjustment,Gtk.Adjustment)">
+            	 * Add gtk adjustments for vertical and horizontal scrolling
+            	 * (This is used for scrollbars)</member>
+    </members>
+</doc>

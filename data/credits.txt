@@ -1,0 +1,158 @@
+; Credits text
+(supertux-text
+  (background "arctis_top.jpg")
+  (music "music/peanutbutter_sandwich.ogg")
+  (speed 30)
+
+  (text (_ "
+
+	Tux Junior is a modified software 
+	fork created from the original
+	smash hit game, Super Tux !
+
+	Licensed with GPL, 
+	Tux Junior is Free software.
+
+	Tux Junior is maintained by 
+	Stephen Groundwater
+
+	Original Super Tux Credits Go To:
+	
+	Bill Kendrick 
+ Original SuperTux Creator and Developer
+
+	Ingo \"grumbel\" Ruhnke 
+ Graphics, Programming, Level Design
+
+
+	Matthias \"MatzeB\" Braun
+ Programming
+
+	Marek \"Wansti\" Moeckel
+ Music, Level Design
+
+	Stephen Groundwater
+ Graphics
+
+	Christoph Sommer
+ Programming, Graphics, Level Design
+
+	Wolfgang Becker
+ Programming, Level Design 
+
+	Christopher A. \"paroneayea\" Webber
+ Graphics, Story
+
+	Ondra \"Ravu al Hemio\" Hošek
+ Programming, Documentation
+
+	Tobias \"tobgle\" Gläßer
+ Programming, Previous Maintainer
+
+	Ricardo \"blacksheep\" Cruz 
+ Programming
+
+	Benjamin P. \"litespeed\" Jung
+ Graphics
+
+	Ryan \"sik0fewl\" Flegel
+ Programming, Site Engineer
+
+	Bastiaan \"basti_\" Zapf
+ Programming
+
+	Duong-Khang \"neoneurone\" NGUYEN
+ Contrib Programming
+
+	Richard Smith 
+ Contrib Programming
+
+	Arvid Norlander
+ Level Design
+
+
+-Additional Music
+
+ \"Mortimers Chipdisko\" by
+	Lukas Nystrand (as Mortimer Twang)
+
+ \"Salsa Con Carne\" by
+	Asbjoern Andersen (as Mystical)
+ remixed by
+	DJ Gentoo
+
+ Excerpts from the Giana Sisters
+ Soundtrack used with kind permission
+ from
+	Chris Huelsbeck
+
+
+-Sound
+
+	Bastian Zapf
+	Christoph Sommer
+	Marek Moeckel
+	Matthias Braun
+	Nathan McCoy
+	Paulo Morfeo
+	Ricardo Cruz
+	Stephen Groundwater
+	Wolfgang Becker
+
+
+-Voice Acting
+
+	Tux - Daniel Alston
+	Penny - Mathilda Edmunds
+	Yeti - Matthias Braun
+
+
+-Translation
+
+	ca - Antoni Villalonga
+	cs - Ondra Hošek
+	de - Core Team
+	da - Anders
+	es - Javier Beaumont
+	fr - Bertrand Delaitre
+	hu - Kővágó Zoltán
+	it - Manuela Kessler
+	lt - Andrius Štikonas
+	nb - Karl Ove Hufthammer
+	nl - Pieter De Decker
+	nn - Karl Ove Hufthammer
+	pl - Dominik Klementowski
+	pt - Ricardo Cruz
+	ru - Constantin Baranov
+	sv - Arvid Norlander
+	uk - Eugen Uvin
+
+
+-Additional Thanks to
+
+	Larry Ewing
+ Creator of Tux, the Linux penguin
+
+	SDL, OpenAL and OpenGL
+ For making such a great gaming experience
+ possible on Linux
+
+
+-Contact
+	info@tuxjunior.com
+	Visit our webpage at
+*http://tuxjunior.com
+
+
+
+
+
+	Thank you for
+	playing
+
+-Tux Junior
+
+
+
+	"))
+)

@@ -1,0 +1,35 @@
+(tuxjunior-sprite
+ (action
+  (name "small-stop")
+  (hitbox 5 20 0 0)
+  (images "smalltux.png")
+ )
+ (action
+  (name "small-walking")
+  (hitbox 5 20 0 0)
+  (images "smalltux.png"
+)
+
+ )
+ (action
+  (name "large-walking")
+  (hitbox 5 20 0 0)
+  (images "smalltux.png")
+ )
+ (action
+  (name "large-stop")
+  (hitbox 5 20 0 0)
+  (images "smalltux.png")
+ )
+ (action
+  (name "fire-walking")
+  (hitbox 5 20 0 0)
+  (images "smalltux.png")
+ )
+ (action
+  (name "fire-stop")
+  (hitbox 5 20 0 0)
+  (images "smalltux.png")
+ )
+)
+

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2DDAEA33-FE40-4FF5-BF60-BBD4DD13576D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LispReader</RootNamespace>
+    <AssemblyName>LispReader</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <OutputType>Library</OutputType>
+    <AssemblyName>LispReader</AssemblyName>
+    <RootNamespace>LispReader</RootNamespace>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <OutputType>Library</OutputType>
+    <AssemblyName>LispReader</AssemblyName>
+    <DebugSymbols>true</DebugSymbols>
+    <RootNamespace>LispReader</RootNamespace>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="FieldOrProperty.cs" />
+    <Compile Include="ICustomLispSerializer.cs" />
+    <Compile Include="LispAttributes.cs" />
+    <Compile Include="LispRootSerializer.cs" />
+    <Compile Include="LispSerializer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\gtkgl-sharp\gtkgl-sharp.csproj">
+      <Project>{BA787F0F-DD07-45A1-B4D8-6F643ADE289C}</Project>
+      <Name>gtkgl-sharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\libeditor\libeditor.csproj">
+      <Project>{FD0B9E66-17B4-495E-B099-439507637A6C}</Project>
+      <Name>libeditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lisp\Lisp.csproj">
+      <Project>{9EC3C894-3BEA-419C-ABE1-634B86AE7C0C}</Project>
+      <Name>Lisp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="atk-sharp, Version=2.8.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <Reference Include="glib-sharp, Version=2.8.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <Reference Include="gtk-sharp, Version=2.8.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+  </ItemGroup>
+</Project>

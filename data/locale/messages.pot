@@ -1,0 +1,328 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-28 11:33-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/control/joystickkeyboardcontroller.cpp:776 src/options_menu.cpp:119
+msgid "Setup Keyboard"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:778
+#: src/control/joystickkeyboardcontroller.cpp:875
+msgid "Up"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:779
+#: src/control/joystickkeyboardcontroller.cpp:876
+msgid "Down"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:780
+#: src/control/joystickkeyboardcontroller.cpp:877
+msgid "Left"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:781
+#: src/control/joystickkeyboardcontroller.cpp:878
+msgid "Right"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:782
+#: src/control/joystickkeyboardcontroller.cpp:879
+msgid "Jump"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:783
+#: src/control/joystickkeyboardcontroller.cpp:880
+msgid "Action"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:784
+#: src/control/joystickkeyboardcontroller.cpp:882
+msgid "Peek Left"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:785
+#: src/control/joystickkeyboardcontroller.cpp:883
+msgid "Peek Right"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:787
+msgid "Console"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:790
+#: src/control/joystickkeyboardcontroller.cpp:890 src/options_menu.cpp:60
+#: src/options_menu.cpp:122 src/title.cpp:91 src/title.cpp:142
+#: src/title.cpp:193 src/title.cpp:289
+msgid "Back"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:802
+#: src/control/joystickkeyboardcontroller.cpp:901
+msgid "None"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:804
+msgid "Up cursor"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:806
+msgid "Down cursor"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:808
+msgid "Left cursor"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:810
+msgid "Right cursor"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:812
+msgid "Return"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:814
+msgid "Space"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:816
+msgid "Right Shift"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:818
+msgid "Left Shift"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:820
+msgid "Right Control"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:822
+msgid "Left Control"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:824
+msgid "Right Alt"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:826
+msgid "Left Alt"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:836
+msgid "Press Key"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:872 src/options_menu.cpp:120
+msgid "Setup Joystick"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:881
+msgid "Pause/Menu"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:885
+msgid "Jump with Up"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:887
+msgid "No Joysticks found"
+msgstr ""
+
+#: src/control/joystickkeyboardcontroller.cpp:912
+msgid "Press Button"
+msgstr ""
+
+#: src/game_session.cpp:108 src/worldmap/worldmap.cpp:155
+msgid "Pause"
+msgstr ""
+
+#: src/game_session.cpp:110 src/worldmap/worldmap.cpp:157
+msgid "Continue"
+msgstr ""
+
+#: src/game_session.cpp:111 src/options_menu.cpp:108 src/title.cpp:395
+#: src/worldmap/worldmap.cpp:158
+msgid "Options"
+msgstr ""
+
+#: src/game_session.cpp:113
+msgid "Abort Level"
+msgstr ""
+
+#: src/game_session.cpp:270 src/statistics.cpp:251
+msgid "Coins"
+msgstr ""
+
+#: src/game_session.cpp:276
+msgid "contributed by "
+msgstr ""
+
+#: src/game_session.cpp:280 src/statistics.cpp:132
+msgid "Best Level Statistics"
+msgstr ""
+
+#: src/gui/menu.cpp:64
+msgid "Yes"
+msgstr ""
+
+#: src/gui/menu.cpp:65
+msgid "No"
+msgstr ""
+
+#: src/main.cpp:252
+#, c-format
+msgid ""
+"Usage: %s [OPTIONS] [LEVELFILE]\n"
+"\n"
+msgstr ""
+
+#: src/main.cpp:254
+#, c-format
+msgid ""
+"Options:\n"
+"  -f, --fullscreen             Run in fullscreen mode\n"
+"  -w, --window                 Run in window mode\n"
+"  -g, --geometry WIDTHxHEIGHT  Run TuxJunior in given resolution\n"
+"  -a, --aspect WIDTH:HEIGHT    Run TuxJunior with given aspect ratio\n"
+"  --disable-sfx                Disable sound effects\n"
+"  --disable-music              Disable music\n"
+"  --help                       Show this help message\n"
+"  --version                    Display TuxJunior version and quit\n"
+"  --console                    Enable ingame scripting console\n"
+"  --noconsole                  Disable ingame scripting console\n"
+"  --show-fps                   Display framerate in levels\n"
+"  --no-show-fps                Do not display framerate in levels\n"
+"  --record-demo FILE LEVEL     Record a demo to FILE\n"
+"  --play-demo FILE LEVEL       Play a recorded demo\n"
+"\n"
+msgstr ""
+
+#: src/options_menu.cpp:42 src/options_menu.cpp:111
+msgid "Language"
+msgstr ""
+
+#: src/options_menu.cpp:44
+msgid "auto-detect language"
+msgstr ""
+
+#: src/options_menu.cpp:110
+msgid "Fullscreen"
+msgstr ""
+
+#: src/options_menu.cpp:113
+msgid "Sound"
+msgstr ""
+
+#: src/options_menu.cpp:114
+msgid "Music"
+msgstr ""
+
+#: src/options_menu.cpp:116
+msgid "Sound (disabled)"
+msgstr ""
+
+#: src/options_menu.cpp:117
+msgid "Music (disabled)"
+msgstr ""
+
+#: src/statistics.cpp:141 src/statistics.cpp:188
+msgid "Max coins collected:"
+msgstr ""
+
+#: src/statistics.cpp:145 src/statistics.cpp:193
+msgid "Max fragging:"
+msgstr ""
+
+#: src/statistics.cpp:149 src/statistics.cpp:201
+msgid "Min time needed:"
+msgstr ""
+
+#: src/statistics.cpp:153 src/statistics.cpp:206
+msgid "Max secrets found:"
+msgstr ""
+
+#: src/statistics.cpp:248
+msgid "You"
+msgstr ""
+
+#: src/statistics.cpp:249
+msgid "Best"
+msgstr ""
+
+#: src/statistics.cpp:257
+msgid "Secrets"
+msgstr ""
+
+#: src/statistics.cpp:263
+msgid "Time"
+msgstr ""
+
+#: src/title.cpp:85 src/title.cpp:392
+msgid "Start Game"
+msgstr ""
+
+#: src/title.cpp:120 src/title.cpp:393
+msgid "Contrib Levels"
+msgstr ""
+
+#: src/title.cpp:268 src/title.cpp:394
+msgid "Add-ons"
+msgstr ""
+
+#: src/title.cpp:272
+msgid "Check Online"
+msgstr ""
+
+#: src/title.cpp:274
+msgid "Check Online (disabled)"
+msgstr ""
+
+#: src/title.cpp:396
+msgid "Credits"
+msgstr ""
+
+#: src/title.cpp:397
+msgid "Quit"
+msgstr ""
+
+#: src/title.cpp:436
+msgid ""
+"Copyright (c) 2007-2009 Tux Junior Devel Team\n"
+"Copyright (c) 2002-2008 Super Tux Devel Team\n"
+"This game comes with ABSOLUTELY NO WARRANTY. This is free software, and you "
+"are welcome to\n"
+"redistribute it under certain conditions; see the file COPYING for details.\n"
+msgstr ""
+
+#: src/title.cpp:548
+msgid "Free"
+msgstr ""
+
+#: src/title.cpp:548 src/title.cpp:553
+msgid "Slot"
+msgstr ""
+
+#: src/trigger/secretarea_trigger.cpp:81
+msgid "You found a secret area!"
+msgstr ""
+
+#: src/worldmap/worldmap.cpp:160
+msgid "Quit World"
+msgstr ""

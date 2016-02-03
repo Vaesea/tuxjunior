@@ -1,0 +1,4 @@
+(tuxjunior-sprite
+       (action
+         (name "default")
+         (images "platter.png")))

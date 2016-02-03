@@ -1,0 +1,5 @@
+(tuxjunior-sprite
+      (action
+        (name "normal")
+        (images "rock.png"))
+)

@@ -1,0 +1,9 @@
+(tuxjunior-sprite
+  (action
+  (name "normal")
+  (hitbox 0 0 0 0)
+(fps 5)
+  (images 
+"icecube.png"
+))
+)

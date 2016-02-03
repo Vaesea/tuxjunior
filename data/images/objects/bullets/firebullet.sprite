@@ -1,0 +1,10 @@
+(tuxjunior-sprite
+ (action
+  (hitbox 2 2 12 12)
+  (fps 10)
+  (images "fire_bullet-0.png"
+"fire_bullet-0.png"
+"fire_bullet-0.png"
+)
+ )
+)

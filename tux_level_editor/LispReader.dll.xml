@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LispReader</name>
+    </assembly>
+    <members>
+        <member name="T:LispReader.FieldOrProperty">
+            <summary>
+            Oreginal base class (MemberInfo) can't Get/SetValue and this class allows it.
+            One code can work with FieldInfo or PropertyInfo as if there was no difference between them. + can raise event when Changed
+            It's a kind of hack, however, because we can't "rebase" a class.
+            </summary>
+        </member>
+        <member name="M:LispReader.FieldOrProperty.FireChanged(System.Object)">
+            <summary> Code uses this to notify editors when only part of object changes (but it's adress not). </summary>
+        </member>
+        <member name="T:Lisp.ICustomLispSerializer">
+            <summary>
+            		Implement this interface to handle the seralizing
+            		on your own when seralizing the class.
+            </summary>
+            <seealso cref="T:Lisp.ILispSerializer" />
+        </member>
+        <member name="M:Lisp.ICustomLispSerializer.CustomLispRead(Lisp.Properties)">
+            <summary>
+            		Should populate the object from <paramref name="Props" /></summary>
+            <param name="Props">The serialized data.</param>
+            <seealso cref="M:Lisp.ICustomLispSerializer.CustomLispWrite(Lisp.Writer)" />
+        </member>
+        <member name="M:Lisp.ICustomLispSerializer.CustomLispWrite(Lisp.Writer)">
+            <summary>
+            		Should serialize the object to <paramref name="Writer" /></summary>
+            <param name="Writer">a <see cref="T:Lisp.Writer" /> to serialize to.</param>
+            <seealso cref="M:Lisp.ICustomLispSerializer.CustomLispRead(Lisp.Properties)" />
+        </member>
+        <member name="M:Lisp.ICustomLispSerializer.FinishRead">
+            <summary>
+            Called after <see cref="M:Lisp.ICustomLispSerializer.CustomLispRead(Lisp.Properties)" />.
+            </summary>
+            <remarks>
+            		There are no examples what this should be used for (all are empty
+            		in the classes that implement this interface) but it is always
+            		called after <see cref="M:Lisp.ICustomLispSerializer.CustomLispRead(Lisp.Properties)" /> by the
+            		<see cref="T:LispReader.LispRootSerializer" />.
+            </remarks>
+            <seealso cref="M:Lisp.ICustomLispSerializer.CustomLispRead(Lisp.Properties)" />
+        </member>
+        <member name="T:Lisp.ILispSerializer">
+            <summary>
+            		Implement this interface to handle the serializing of some other
+            		class or struct in a special way.
+            </summary>
+            <seealso cref="T:Lisp.ICustomLispSerializer" />
+            <seealso cref="T:LispReader.LispCustomSerializerAttribute" />
+        </member>
+        <member name="M:Lisp.ILispSerializer.Read(Lisp.List)">
+            <summary>
+            		Creates an instance from the serialized object in
+            		<paramref name="list" /></summary>
+            <param name="list">The serialized object</param>
+            <returns>The unserialized object</returns>
+            <seealso cref="M:Lisp.ILispSerializer.Write(Lisp.Writer,System.String,System.Object)" />
+        </member>
+        <member name="M:Lisp.ILispSerializer.Write(Lisp.Writer,System.String,System.Object)">
+            <summary>
+            		Seralizes <paramref name="Object" /> using <paramref name="writer" /></summary>
+            <param name="writer">
+            		A <see cref="T:Lisp.Writer" /> that <paramref name="Object" /> should be
+            		seralized to.</param>
+            <param name="name">
+            		Name that should be used for the serialized lisp tree.
+            </param>
+            <param name="Object">
+            		The object to write.
+            </param>
+            <seealso cref="M:Lisp.ILispSerializer.Read(Lisp.List)" />
+        </member>
+        <member name="T:LispReader.LispCustomSerializerAttribute">
+            <summary>
+            		Marks a class or struct as a serializer
+            		for <see cref="F:LispReader.LispCustomSerializerAttribute.Type" /></summary>
+            <remarks>
+            		The class marked with this must implement
+            		<see cref="T:Lisp.ILispSerializer" />.
+            </remarks>
+            <seealso cref="T:Lisp.ILispSerializer" />
+        </member>
+        <member name="T:LispReader.LispChildAttribute">
+            <summary>
+            		Maps a field or property in a class to a lisp construct.
+            </summary>
+        </member>
+        <member name="T:LispReader.LispRootSerializer">
+            <summary>Serializes and Deserializes an object based on reflection.</summary>
+            <remarks>If someone is looking for a challenge: Speed could be improved heavily
+            by creating CIL at runtime...</remarks>
+        </member>
+        <member name="T:LispReader.LispSerializer">
+            <summary>This class allows serialization of .net Classes to/from lisp constructs.</summary>
+            <remarks>
+                <para>You just have to annotate the class to specify a mapping from fields/lists to
+            lisp structures.</para>
+                <para>The design is similar to <see cref="T:System.Xml.Serialization.XmlSerializer" /></para>
+            </remarks>
+        </member>
+    </members>
+</doc>

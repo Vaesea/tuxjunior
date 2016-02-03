@@ -1,0 +1,5 @@
+(tuxjunior-sprite
+      (action
+        (name "empty")
+        (images "empty.png"))
+)

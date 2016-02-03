@@ -1,0 +1,9 @@
+(tuxjunior-sprite
+       (action
+         (fps 5.0)
+         (hitbox 13 6 0 0)
+         (images "gameover-0.png"
+"gameover-1.png"
+"gameover-2.png"
+"gameover-3.png"
+			         )))

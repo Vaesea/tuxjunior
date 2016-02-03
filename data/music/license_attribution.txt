@@ -1,0 +1,14 @@
+TuxJunior 
+Attributions and License Information
+======================================================================
+File Location:
+[Tux Junior]\data\music\
+
+
+======================================================================
+
+File Name: StrictProduction-In-Da-Jungle-2.ogg
+File Name: Strictproduction - BeatBoxing.mmpz
+Author: Grigore Florin (StrictProduction)
+License: Artistic 2.0 / GPLv2
+http://lmms.sourceforge.net/lsp.php?action=show&file=409

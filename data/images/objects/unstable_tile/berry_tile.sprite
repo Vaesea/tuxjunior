@@ -1,0 +1,23 @@
+(tuxjunior-sprite
+  (action
+    (name "normal")
+    (images 
+      "berry1.png"
+    )
+  )
+  (action
+    (name "crumbling")
+    (fps 20)
+    (images 
+      "berry1.png"
+
+    )
+  )
+  (action
+    (name "disintegrating")
+    (fps 1)
+    (images 
+      "berry1.png"
+    )
+  )
+)

@@ -1,0 +1,16 @@
+[Meta]
+RootName: @tuxjunior.berlios.de/tuxjunior
+DisplayName: TuxJunior
+ShortName: tuxjunior
+Skeleton-Author: Christoph Sommer <christoph.sommer@2006.expires.deltadevelopment.de>
+Skeleton-Version: 1
+
+[Notes]
+The interface version follows the software version in this library.
+This skeleton can detect 1.0
+
+[Test]
+OUTPUT=$(tuxjunior --version || ~/.local/bin/tuxjunior --version)
+VERSIONLINE=$(grepBeginsWith "$OUTPUT" "tuxjunior ")
+VERSION=${VERSIONLINE/tuxjunior /}
+INTERFACE_VERSIONS=$(getMajor $VERSION).$(getMinor $VERSION)
