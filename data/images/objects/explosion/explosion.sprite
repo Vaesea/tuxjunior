@@ -1,0 +1,13 @@
+(tuxjunior-sprite
+      (action
+        (name "normal")
+        (hitbox 16 8 34 41)
+        (images
+           "sparkle-1.png"
+ "sparkle-2.png"
+ "sparkle-3.png"
+ "sparkle-4.png"
+ "sparkle-5.png"
+        )
+      )
+)

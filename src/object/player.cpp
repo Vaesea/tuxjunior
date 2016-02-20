@@ -592,7 +592,7 @@ Player::do_jump(float yspeed) {
   if (is_big()) {
     sound_manager->play("sounds/bigjump.wav");
   } else {
-    sound_manager->play("sounds/freesound/JUMP_7737_NoiseCollector_pigtoy.wav");
+    sound_manager->play("sounds/tj-original/Jump_1.wav");
   }
 }
 
