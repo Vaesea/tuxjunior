@@ -308,6 +308,7 @@ private:
   Portable* grabbed_object;
 
   Sprite* smalltux_gameover;
+Sprite* firetux_gameover;
   Sprite* smalltux_star;
   Sprite* bigtux_star;
 

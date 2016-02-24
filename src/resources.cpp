@@ -84,10 +84,10 @@ void load_shared()
   char img_name[1024];
   for (int i = 0; i < GROWING_FRAMES; i++)
     {
-      snprintf(img_name, sizeof(img_name), "images/creatures/tux_grow/left-%i.png", i+1);
+      snprintf(img_name, sizeof(img_name), "images/objects/explosion/sparkle-%i.png", i+1);
       growingtux_left[i] = new Surface(img_name);
 
-      snprintf(img_name, sizeof(img_name), "images/creatures/tux_grow/right-%i.png", i+1);
+      snprintf(img_name, sizeof(img_name), "images/objects/explosion/sparkle-%i.png", i+1);
       growingtux_right[i] = new Surface(img_name);
     }
 
@@ -97,11 +97,17 @@ void load_shared()
   small_tux->arms = sprite_manager->create("images/creatures/tux_small/small-tux-arms.sprite");
   small_tux->feet = 0;
 
-  big_tux = new TuxBodyParts();
+  /* big_tux = new TuxBodyParts();
   big_tux->head = sprite_manager->create("images/creatures/tux_big/big-tux-head.sprite");
   big_tux->body = sprite_manager->create("images/creatures/tux_big/big-tux-body.sprite");
   big_tux->arms = sprite_manager->create("images/creatures/tux_big/big-tux-arms.sprite");
-  big_tux->feet = sprite_manager->create("images/creatures/tux_big/big-tux-feet.sprite");
+  big_tux->feet = sprite_manager->create("images/creatures/tux_big/big-tux-feet.sprite"); */
+
+  big_tux = new TuxBodyParts();
+  big_tux->head = sprite_manager->create("images/creatures/nolok/head.sprite");
+  big_tux->body = sprite_manager->create("images/creatures/nolok/body.sprite");
+  big_tux->arms = sprite_manager->create("images/creatures/nolok/arms.sprite");
+  big_tux->feet = sprite_manager->create("images/creatures/nolok/feet.sprite");
 
   fire_tux = new TuxBodyParts();
   fire_tux->head = sprite_manager->create("images/creatures/nolok/head.sprite");

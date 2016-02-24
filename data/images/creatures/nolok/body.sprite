@@ -2,32 +2,32 @@
        (action
          (name "walk-right")
          (fps 15.0)
-         (hitbox 27 32 0 0)
-         (images "blank.png"))
+         (hitbox 17 16 0 0)
+         (images "nolok_body.png"))
 
        (action
          (name "walk-left")
          (fps 15.0)
-         (hitbox 27 32 0 0)
+         (hitbox 15 16 0 0)
          (mirror-action "walk-right"))
 
        (action
          (name "stand-right")
          (fps 15.0)
-         (hitbox 27 32 0 0)
-         (images "blank.png"))
+         (hitbox 17 15 0 0)
+         (images "nolok_body.png"))
 
        (action
          (name "stand-left")
          (fps 15.0)
-         (hitbox 27 32 0 0)
+         (hitbox 15 15 0 0)
          (mirror-action "stand-right"))
 
        (action
          (name "jump-right")
          (fps 15.0)
          (hitbox 5 30 0 0)
-         (images "blank.png"))
+         (images "nolok_body_jump.png"))
 
        (action
          (name "jump-left")
@@ -49,13 +49,13 @@
 
        (action
          (name "skid-right")
-         (hitbox 6 31 0 0)
-         (images "blank.png"))
+         (hitbox 17 16 0 0)
+         (images "nolok_body_slide.png"))
 
        (action
          (name "skid-left")
          (fps 15.0)
-         (hitbox 27 31 0 0)
+         (hitbox 15 16 0 0)
          (mirror-action "skid-right"))
 
        (action
@@ -72,29 +72,30 @@
        (action
          (name "backflip-right")
          (fps 9.0)
-         (hitbox 8 8 40 40)
+         (hitbox 15 16 0 0)
          (images 
-"flip/flip_1.png"
-"flip/flip_2.png"
-"flip/flip_3.png"
-"flip/flip_4.png"
-"flip/flip_1.png"
-"flip/flip_1.png"
-"flip/flip_1.png"
-"flip/flip_1.png"
-"flip/flip_1.png"
+"nolok_body_backflip_1.png"
+"nolok_body_backflip_1.png"
+"nolok_body_backflip_2.png"
+"nolok_body_backflip_2.png"
+"nolok_body_backflip_3.png"
+"nolok_body_backflip_3.png"
+"nolok_body_backflip_4.png"
+"nolok_body_backflip_4.png"
+"nolok_body_backflip_5.png"
+"nolok_body_backflip_5.png"
 ))
 
        (action
          (name "backflip-left")
          (fps 9.0)
-         (hitbox 8 8 40 40)
+         (hitbox 15 16 0 0)
          (mirror-action "backflip-right"))
 
        (action
          (name "buttjump-right")
          (hitbox 5 32 0 0)
-         (images "blank.png"))
+         (images "nolok_body_buttjump.png"))
 
        (action
          (name "buttjump-left")

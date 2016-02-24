@@ -2,150 +2,59 @@
        (action
          (name "walk-right")
          (fps 15.0)
-         (hitbox 8 32 0 0)
-         (images "arms-walk-0.png"
-"arms-walk-0.png"
-"arms-walk-1.png"
-"arms-walk-1.png"
-"arms-walk-2.png"
-"arms-walk-2.png"
+         (hitbox 17 15 0 0)
+         (images "nolok_arms.png"
+"nolok_arms.png"
+"nolok_arms.png"
+"nolok_arms.png"
+"nolok_arms_0.png"
+"nolok_arms_0.png"
+"nolok_arms_0.png"
 ))
 
        (action
          (name "walk-left")
          (fps 15.0)
-         (hitbox 27 32 0 0)
+         (hitbox 17 15 0 0)
          (mirror-action "walk-right"))
 
        (action
          (name "stand-right")
          (fps 15.0)
-         (hitbox 8 32 0 0)
-         (images
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-"arms-stand-0.png"
-
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-"arms-stand-1.png"
-
+         (hitbox 17 15 0 0)
+         (images "nolok_arms.png"
 ))
 
        (action
          (name "stand-left")
          (fps 15.0)
-         (hitbox 27 32 0 0)
+         (hitbox 15 15 0 0)
          (mirror-action "stand-right"))
 
        (action
          (name "jump-right")
          (fps 15.0)
-         (hitbox 7 30 0 0)
-         (images "arms-jump-0.png"
+         (hitbox 12 30 0 0)
+         (images "nolok_arms_jump.png"
+"nolok_arms_jump.png"
+"nolok_arms_jump.png"
+"nolok_arms_jump.png"
+"nolok_arms_jump_0.png"
+"nolok_arms_jump_0.png"
+"nolok_arms_jump_0.png"
+"nolok_arms_jump_0.png"
 ))
 
        (action
          (name "jump-left")
          (fps 15.0)
-         (hitbox 27 30 0 0)
+         (hitbox 22 30 0 0)
          (mirror-action "jump-right"))
 
        (action
          (name "duck-right")
          (hitbox 5 62 0 0)
-         (images "arms-duck-0.png"))
+         (images "blank.png"))
 
        (action
          (name "duck-left")
@@ -154,19 +63,19 @@
 
        (action
          (name "skid-right")
-         (hitbox 6 31 0 0)
-         (images "arms-skid-0.png"))
+         (hitbox 17 15 0 0)
+         (images "nolok_arms_slide.png"))
 
        (action
          (name "skid-left")
          (fps 15.0)
-         (hitbox 27 31 0 0)
+         (hitbox 17 15 0 0)
          (mirror-action "skid-right"))
 
        (action
          (name "kick-right")
          (hitbox 5 32 0 0)
-         (images "arms-stand-0.png"))
+         (images "nolok_arms_slide.png"))
 
        (action
          (name "kick-left")
@@ -175,18 +84,31 @@
 
        (action
          (name "backflip-right")
-         (hitbox 5 62 0 0)
-         (images "flip/empty.png"))
+         (hitbox 17 15 0 0)
+         (fps 9.0)
+         (images 
+"nolok_arms_backflip_1.png"
+"nolok_arms_backflip_1.png"
+"nolok_arms_backflip_2.png"
+"nolok_arms_backflip_2.png"
+"nolok_arms_backflip_3.png"
+"nolok_arms_backflip_3.png"
+"nolok_arms_backflip_4.png"
+"nolok_arms_backflip_4.png"
+"nolok_arms_backflip_5.png"
+"nolok_arms_backflip_5.png"
+))
 
        (action
          (name "backflip-left")
-         (hitbox 27 62 0 0)
+         (fps 9.0)
+         (hitbox 17 15 0 0)
          (mirror-action "backflip-right"))
 
        (action
          (name "buttjump-right")
          (hitbox 5 32 0 0)
-         (images "blank.png"))
+         (images "nolok_arms_buttjump.png"))
 
        (action
          (name "buttjump-left")
@@ -198,7 +120,7 @@
          (name "grab-right")
          (hitbox 5 32 0 0)
          (z-order 2)
-         (images "arms-grab-0.png"))
+         (images "nolok_arms_slide.png"))
 
        (action
          (name "grab-left")
@@ -210,7 +132,7 @@
          (name "duck+grab-right")
          (hitbox 5 62 0 0)
          (z-order 2)
-         (images "arms-duck+grab-0.png"))
+         (images "nolok_arms_slide.png"))
 
        (action
          (name "duck+grab-left")

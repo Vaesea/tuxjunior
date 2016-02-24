@@ -2,130 +2,34 @@
        (action
          (name "walk-right")
          (fps 15.0)
-         (hitbox 8 32 0 0)
+         (hitbox 17 15 0 0)
          (images
-"feet-walk-0.png"
-"feet-walk-0.png"
-"feet-walk-1.png"
-"feet-walk-1.png"
-"feet-walk-2.png"
-"feet-walk-2.png"
+"nolok_feet.png"
+"nolok_feet.png"
+"nolok_feet.png"
+"nolok_feet_0.png"
+"nolok_feet_0.png"
+"nolok_feet_0.png"
                  ))
 
        (action
          (name "walk-left")
          (fps 15.0)
-         (hitbox 27 32 0 0)
+         (hitbox 15 15 0 0)
          (mirror-action "walk-right"))
 
        (action
          (name "stand-right")
          (fps 15.0)
-         (hitbox 8 32 0 0)
+         (hitbox 17 15 0 0)
          (images 
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-"feet-stand-0.png"
-
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"
-"feet-stand-1.png"))
+"nolok_feet.png"
+))
 
        (action
          (name "stand-left")
          (fps 15.0)
-         (hitbox 27 32 0 0)
+         (hitbox 15 15 0 0)
          (mirror-action "stand-right"))
 
        (action
@@ -133,25 +37,15 @@
          (fps 15.0)
          (hitbox 5 30 0 0)
          (images 
-
-"feet-jump-0.png"
-"feet-jump-0.png"
-"feet-jump-0.png"
-"feet-jump-0.png"
-"feet-jump-0.png"
-"feet-jump-0.png"
-"feet-jump-0.png"
-"feet-jump-0.png"
-"feet-jump-0.png"
-"feet-jump-0.png"
-"feet-jump-0.png"
-"feet-jump-1.png"
-"feet-jump-1.png"
-"feet-jump-1.png"
-"feet-jump-1.png"
-"feet-jump-1.png"
-"feet-jump-1.png"
-"feet-jump-1.png"))
+"nolok_feet_jump.png"
+"nolok_feet_jump.png"
+"nolok_feet_jump.png"
+"nolok_feet_jump_0.png"
+"nolok_feet_jump_0.png"
+"nolok_feet_jump_0.png"
+"nolok_feet_jump_0.png"
+"nolok_feet_jump_0.png"
+))
 
        (action
          (name "jump-left")
@@ -173,18 +67,18 @@
 
        (action
          (name "skid-right")
-         (hitbox 6 31 0 0)
-         (images "feet-skid-0.png"))
+         (hitbox 17 15 0 0)
+         (images "nolok_feet_slide.png"))
 
        (action
          (name "skid-left")
-         (hitbox 27 31 0 0)
+         (hitbox 15 15 0 0)
          (mirror-action "skid-right"))
 
        (action
          (name "kick-right")
          (hitbox 5 32 0 0)
-         (images "feet-kick-0.png"))
+         (images "nolok_feet.png"))
 
        (action
          (name "kick-left")
@@ -193,20 +87,31 @@
 
        (action
          (name "backflip-right")
-         (fps 15.0)
-         (hitbox 5 62 0 0)
-         (images "flip/empty.png"))
+         (fps 9.0)
+         (hitbox 15 16 0 0)
+         (images 
+"nolok_feet_backflip_1.png"
+"nolok_feet_backflip_1.png"
+"nolok_feet_backflip_2.png"
+"nolok_feet_backflip_2.png"
+"nolok_feet_backflip_3.png"
+"nolok_feet_backflip_3.png"
+"nolok_feet_backflip_4.png"
+"nolok_feet_backflip_4.png"
+"nolok_feet_backflip_5.png"
+"nolok_feet_backflip_5.png"
+))
 
        (action
          (name "backflip-left")
-         (fps 15.0)
-         (hitbox 27 62 0 0)
+         (fps 9.0)
+         (hitbox 15 16 0 0)
          (mirror-action "backflip-right"))
 
        (action
          (name "buttjump-right")
          (hitbox 5 32 0 0)
-         (images "feet-buttjump-0.png"))
+         (images "nolok_feet_buttjump.png"))
 
        (action
          (name "buttjump-left")

@@ -136,6 +136,7 @@ Player::Player(PlayerStatus* _player_status, const std::string& name)
   controller = main_controller;
   scripting_controller = new CodeController();
   smalltux_gameover = sprite_manager->create("images/creatures/tux_small/smalltux-gameover.sprite");
+  firetux_gameover = sprite_manager->create("images/objects/particles/smoke.sprite");
   smalltux_star = sprite_manager->create("images/creatures/tux_small/smalltux-star.sprite");
   bigtux_star = sprite_manager->create("images/creatures/tux_big/bigtux-star.sprite");
   airarrow.reset(new Surface("images/engine/hud/airarrow.png"));
@@ -156,6 +157,7 @@ Player::~Player()
 {
   if (climbing) stop_climbing(*climbing);
   delete smalltux_gameover;
+  delete firetux_gameover;
   delete smalltux_star;
   delete bigtux_star;
   delete scripting_controller;
@@ -868,7 +870,7 @@ Player::set_bonus(BonusType type, bool animate)
       Vector pspeed = Vector(((dir==LEFT) ? +100 : -100), -300);
       Vector paccel = Vector(0, 1000);
       std::string action = (dir==LEFT)?"left":"right";
-      Sector::current()->add_object(new SpriteParticle("images/objects/particles/firetux-helmet.sprite", action, ppos, ANCHOR_TOP, pspeed, paccel, LAYER_OBJECTS-1));
+      Sector::current()->add_object(new SpriteParticle("images/objects/explosion/explosion.sprite", action, ppos, ANCHOR_TOP, pspeed, paccel, LAYER_OBJECTS-1));
       if (climbing) stop_climbing(*climbing);
     }
     if ((player_status->bonus == ICE_BONUS) && (animate)) {
@@ -1037,9 +1039,18 @@ Player::draw(DrawingContext& context)
     }
 
   /* Draw Tux */
-  if(dying) {
-    smalltux_gameover->draw(context, get_pos(), LAYER_FLOATINGOBJECTS + 1);
+  if (dying) {
+         if (is_big()) {
+ 	firetux_gameover->draw(context, get_pos(), LAYER_FLOATINGOBJECTS + 1);
+	} else {
+        smalltux_gameover->draw(context, get_pos(), LAYER_FLOATINGOBJECTS + 1); 
   }
+}
+/* SG 
+  if((dying) && (player_status->bonus == FIRE_BONUS)) {
+    firetux_gameover->draw(context, get_pos(), LAYER_FLOATINGOBJECTS + 1);
+  }
+*/
   else if ((growing_timer.get_timeleft() > 0) && (!duck)) {
       if (dir == RIGHT) {
         context.draw_surface(growingtux_right[int((growing_timer.get_timegone() *
