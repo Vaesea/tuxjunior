@@ -1,4 +1,4 @@
-(supertux-sprite
+(tuxjunior-sprite
  (action
   (name "left")
   (fps 10.0)
